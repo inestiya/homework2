@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+body {
+	font-family: 'Heebo', sans-serif;
+	font color: #21243D;
+	margin: 0px;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.box {
+	height: 75vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	position: relative;
+	/* background-color: rgba(20, 142, 119, 0.3) ; */
+	background-color: #EDF7FA;
+		
+}
+
+
+.project {
+	display: flex;
+	margin:0 auto;
+	flex-direction: column;
+	position: relative;
+}
+.project-container{
+	justify-content: flex-start;
+	flex-direction: row;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	padding: 10px;
+	margin:0 auto;
+}
+
+.content{
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	padding: 20px;
+}
+.content img{
+	border-radius: 6px;
+	
+
+}
+.desccontent{
+	flex-direction: row;
+	justify-content: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+}
+section h1{
+	font-size: 25pt;
+}
+section h3 {
+	text-align: left;
+	padding:20px 0;
+	color: #136223;
+	margin-bottom: 20px;
+}
+
+section .desccontent strong{
+	background-color: #142850;
+	border-radius: 16px;
+	padding-left: 6px;
+	padding-right: 6px;
+
+}
+.desccontent h2 a:hover {
+	padding-bottom: 32px;
+	color: #136223;
+}
+
+.medsos {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding: 5px ;
+	padding-top: 100px;
+	border: 3px;
+	z-index: 1;
+}
+.medsos a:hover {
+	background-color: #148F77;
+	border-color: #148F77;
+	border-radius: 50%;
+}
+.flex-container {
+	display: flex;
+	margin:0 auto;
+	
+}
+.flex-container >div{
+	justify-content: center;
+	padding: 10px;
+	width:80%;
+	margin:0 auto;
+}
+
+footer {
+	padding:10px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.bg-loader {
+	background-color: #eee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.bg-loader .loader {
+	width:100px;
+	height: 100px;
+	border:3px solid #fff;
+	border-radius: 50%;
+	border-top-color: #148F77;
+	border-right-color: #148F77;
+	border-bottom-color: #148F77;
+	animation: puterin .8s linear infinite;
+}
+.label {
+	background-color: #148F77;
+	color: #fff;
+}
+@keyframes puterin {
+	100% {
+		transform: rotate(360deg);
+	}
+}
